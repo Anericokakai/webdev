@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+<script src="https://unpkg.com/scrollreveal"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="header">
+      <nav >
+        <h2 class="logo lefts">Daniels</h2>
+        <ul class="lists rights">
+          <a href=""><li>Home</li></a>
+         <a href=""> <li>About</li></a>
+          <a href=""><li>projects</li></a>
+         <a href=""> <li>Gallery</li></a>
+<a href="">   <li>Contact</li></a>
+        </ul>
+      </nav>
+
+      <div class="intro bottoms">
+        <h1>Hello,</h1>
+        <h3>Im a field engineer</h3>
+      </div>
+    </section>
+    <section class="about">
+      
+      <div class="container">
+        <div class="profileImage lefts">
+          <img src="./WhatsApp Image 2023-11-07 at 07.28.39.jpeg" alt="" />
+        </div>
+        <div class="description bottoms">
+            <h1>About me</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At optio
+            aliquam ab, aut quae sapiente quod accusamus consequatur beatae,
+            ipsa tempora placeat magni inventore pariatur possimus excepturi.
+            Sunt, quam illum.
+          </p>
+
+          <button class="btn">download resume</button>
+        </div>
+      </div>
+    </section>
+    <section class="service">
+        <h1 class="heading">Services and Skills</h1>
+
+        <div class="container">
+            <div class="cards lefts">
+                <div class="icon">
+                  <i class="fa-solid fa-business-time"></i>
+                  <h3>cloud deployment</h3>
+                </div>
+                <div class="desc">
+                  <p>
+                    Use docker and Kubernetes to deploy servers and databases to cloud
+                    a
+                  </p>
+                </div>
+                
+              </div>
+              <div class="cards red rights">
+                <div class="icon">
+                  <i class="fa-solid fa-brain"></i>
+                  <h3>create website</h3>
+                </div>
+                <div class="desc">
+                  tranform your figma file into a reality website
+                </div>
+                
+              </div>
+              <div class="cards rights">
+                <div class="icon">
+                  <i class="fa-solid fa-server"></i>
+                  <h3>create Backend apps</h3>
+                </div>
+                <div class="desc">
+                  work with front end developers to create a backend applications
+                </div>
+                
+              </div>
+              <div class="cards bottoms">
+                <div class="icon">
+                  <i class="fa-solid fa-bug"></i>
+                  <h3>bugs fixing and tests</h3>
+                </div>
+                <div class="desc">
+                  write tests cases for backend application both unit test,
+                  integration test and application test to reduce application failures
+                </div>
+                
+              </div>
+        </div>
+    </section>
+  </body>
+  <script>
+    ScrollReveal({
+      reset: true,
+      distance: "60px",
+      duration: 1500,
+      delay: 300,
+    });
+
+    ScrollReveal().reveal(".logo", { delay: 400, origin: "left" });
+    ScrollReveal().reveal(".ulsCont", { delay: 500, origin: "top" });
+    ScrollReveal().reveal(".tops", { delay: 300, origin: "top" });
+    ScrollReveal().reveal(".bottoms", { delay: 400, origin: "bottom" });
+    ScrollReveal().reveal(".lefts", { delay: 300, origin: "left" });
+    ScrollReveal().reveal(".rights", { delay: 500, origin: "right" });
+  </script>
+</html>
