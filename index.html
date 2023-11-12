@@ -13,18 +13,20 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./style.css">
 <script src="https://unpkg.com/scrollreveal"></script>
-    <title>Document</title>
+    <title>portfolio website</title>
   </head>
   <body>
-    <section class="header">
+    <section class="header" id="home">
       <nav >
-        <h2 class="logo lefts">Daniels</h2>
+        <h2 class="logo lefts">Habakuk</h2>
+        <i class="fa-solid fa-bars"></i>
         <ul class="lists rights">
-          <a href=""><li>Home</li></a>
-         <a href=""> <li>About</li></a>
-          <a href=""><li>projects</li></a>
-         <a href=""> <li>Gallery</li></a>
-<a href="">   <li>Contact</li></a>
+          <i class="fa-solid fa-xmark"></i>
+          <a href="#home"><li>Home</li></a>
+         <a href="#about"> <li>About</li></a>
+          <a href="#services"><li>projects</li></a>
+         <a href="#gallery"> <li>Gallery</li></a>
+<a href="#footer">   <li>Contact</li></a>
         </ul>
       </nav>
 
@@ -33,11 +35,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         <h3>Im a field engineer</h3>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       
       <div class="container">
         <div class="profileImage lefts">
-          <img src="./WhatsApp Image 2023-11-07 at 07.28.39.jpeg" alt="" />
+          <img src="./2.jpeg" alt="" />
         </div>
         <div class="description bottoms">
             <h1>About me</h1>
@@ -48,11 +50,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
             Sunt, quam illum.
           </p>
 
-          <button class="btn">download resume</button>
+<a  target="_blank" href="./Curriculum vitae.pdf">          <button class="btn">download resume</button></a>
         </div>
       </div>
     </section>
-    <section class="service">
+    <section class="service" id="services">
         <h1 class="heading">Services and Skills</h1>
 
         <div class="container">
@@ -102,7 +104,53 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
               </div>
         </div>
     </section>
+
+    <section class="gallery" id="gallery" >
+      <h1>presentations</h1>
+      <div class="container">
+        <div class="imageCard lefts">
+          <img src="./1.jpeg" alt="">
+        </div> <div class="imageCard rights">
+          <img src="./1.jpeg" alt="">
+        </div> <div class="imageCard bottoms">
+          <img src="./1.jpeg" alt="">
+        </div>
+        <div class="imageCard lefts">
+          <img src="./1.jpeg" alt="">
+        </div> <div class="imageCard tops">
+          <img src="./1.jpeg" alt="">
+        </div> <div class="imageCard bottoms">
+          <img src="./1.jpeg" alt="">
+        </div>
+      </div>
+
+    </section>
+    <footer id="footer" class="footer">
+      <h1 class="tops">Contact</h1>
+      <section class="container">
+        <div class="footerCard bottoms">
+          <i class="fa-solid fa-house"></i>
+          <strong>Address</strong>
+          <p>6489 Nyeri Dedan Kimathi university</p>
+        </div>
+        <div class="footerCard lefts">
+          <i class="fa-solid fa-envelope-circle-check"></i>
+          <strong>Email</strong>
+          <p>mwangihabakuk@gmail.com</p>
+        </div>
+        <div class="footerCard rights">
+          <i class="fa-solid fa-phone-volume"></i>
+          <strong>phone</strong>
+          <p>+254-728 327952</p>
+        </div>
+
+      </section>
+      <div class="copyright bottoms">
+        <p> <i class="fa-regular fa-copyright"></i>habakukmwangi. </p> 
+      </div>
+    </footer>
   </body>
+  <script src="./index.js"></script>
   <script>
     ScrollReveal({
       reset: true,

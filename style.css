@@ -7,6 +7,14 @@
     text-decoration: none;
    
 }
+
+html {
+    transition: 0.4s ease-in-out;
+    scroll-behavior: smooth;
+  }
+:root{
+    --box-shadow:  0px 24px 38px 3px rgba(0,0,0,0.14) , 0px 9px 46px 8px rgba(0,0,0,0.12) , 0px 11px 15px -7px rgba(0,0,0,0.2);
+}
 body{
     width: 100vw;
     overflow-x: hidden;
@@ -14,7 +22,7 @@ body{
 .header{
     background: linear-gradient(rgba(0, 0, 0, 0.612), rgba(0, 0, 0, 0.648)),
     url("https://img.freepik.com/free-photo/seljalandsfoss-waterfall-during-sunset-beautiful-waterfall-iceland_335224-596.jpg?w=1060&t=st=1699419170~exp=1699419770~hmac=52a6f0e3faa8ab4cd5c55967c4cfda20f78b2b721fa277566e12b1b0a51aa7ca");
-    min-height: 90vh;
+    min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -123,3 +131,125 @@ nav{
 .icon{
     text-align: center;
 }
+
+.gallery{
+    padding:2em 0 ;
+}
+.gallery h1{
+    text-align: center;
+    padding: 2em 0;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.imageCard{
+    min-width: 270px;
+    max-width: 300px;
+    height: 200px;
+    margin-bottom: 1em;
+    cursor: pointer;
+
+}
+.imageCard img{
+    width: 100%;
+    border-radius: 7px;
+    box-shadow:var(--box-shadow) ;
+    transition: all .3s ease;
+}
+
+.imageCard img:hover{
+    transform: scale(1.1);
+}
+.fa-xmark,
+.fa-bars{
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+
+    .fa-xmark,
+.fa-bars{
+    display: block;
+    position: absolute;
+    font-size: 19px;
+    transition: .5s ease;
+}
+.fa-bars{
+
+    right: 1em;
+}
+.fa-bars:hover{
+    color: #5bc3eb;
+    cursor: pointer;
+}
+.fa-xmark{
+    left: 10px;
+    top: 10px;
+
+}
+
+    .lists{
+        display: block;
+        position: fixed;
+        right: -100%;
+        transform: translateX(0);
+        top: 0;
+        background-color: #5bc3eb;
+        max-width: 300px;
+        min-width: 250px;
+        text-align: center;
+        height: 100vh;
+        z-index: 1;
+        border-radius: 5px 0 0 5px;
+
+        
+    }
+    .show {
+        right: 0;
+        transition: 1s ease;
+        transform: translateX(1);
+    }
+    .lists a li {
+        padding-top: 2em;
+    }
+    .lists{
+        padding-top: 1.5em;
+    }
+    .fa-xmark:hover{
+        color:#be2623 ;
+        cursor: pointer;
+        
+    }
+    
+    
+}
+
+.footer{
+    background-color: #5bc3eb;
+    background-image: -webkit-linear-gradient(30deg, #5bc3eb 50%, #004E95 50%);
+    padding-top: 2em;
+    color: #eff2f9;
+}
+.footer h1{
+    text-align: center;
+    padding:1em 0 ;
+}
+.footerCard{
+    box-shadow: var(--box-shadow);
+    height: 150px;
+    min-width: 270px;
+    max-width: 300px;
+    text-align: center;
+    padding: 1em;
+   padding: 2em;
+    cursor: pointer;
+    background-color: inherit;
+}
+
+.copyright{
+    background-color: white;
+    margin-top: 2em;
+    text-align: center;
+    color: black;
+}
+
