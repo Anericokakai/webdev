@@ -266,6 +266,12 @@ nav{
         cursor: pointer;
         
     }
+    .logo{
+        font-size: 17px;
+    }
+    .intro h1{
+        font-size: 27px;
+    }
     
     
 }
