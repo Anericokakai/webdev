@@ -6,6 +6,17 @@
     list-style: none;
     text-decoration: none;
    
+
+}
+body::-webkit-scrollbar{
+    background-color: #edebd9;
+    border-radius: 100vw;
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: #5bc3eb;
+  border-radius: 100vw;
+  
 }
 
 html {
@@ -21,13 +32,13 @@ body{
 }
 .header{
     background: linear-gradient(rgba(0, 0, 0, 0.612), rgba(0, 0, 0, 0.648)),
-    url("https://img.freepik.com/free-photo/seljalandsfoss-waterfall-during-sunset-beautiful-waterfall-iceland_335224-596.jpg?w=1060&t=st=1699419170~exp=1699419770~hmac=52a6f0e3faa8ab4cd5c55967c4cfda20f78b2b721fa277566e12b1b0a51aa7ca");
+    url("./2863497.jpg");
     min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     
-    padding: 0 1em ;
+    
     color: white;
 
 
@@ -41,14 +52,49 @@ body{
     font-size: 50px;
 }
 nav{
+    width: 100%;
     display: flex;
+    background-color: #5bc3eb;
+    height: 70px;
+    z-index: 3;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    padding:0 1em;
+    box-shadow: var(--box-shadow);
 }
 .lists{
     display: flex;
     gap: 2em;
 
+}
+.holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container2{
+    
+    
+     display: grid;
+     min-height: 40vh;
+     flex-wrap: wrap;
+     gap: 1em;
+     padding: 1.5em 0;
+    
+     
+     
+}
+@media screen and (min-width:447px) {
+    .container2{
+        grid-template-columns: 1fr 1fr ;
+    }
+    
+}
+.moreHome{
+    width: 100%;
+    background-color: #5bc3eb;
+    background-image: -webkit-linear-gradient(30deg, #edebd9 50%, #00848c 50%);
 }
 .lists  a li{
     position: relative;
