@@ -45,8 +45,11 @@ body{
 
 }
 .intro{
-    
+    padding-top: 10em;
     text-align: center;
+}
+.auto{
+    color: #5bc3eb;
 }
 .intro h1{
     font-size: 50px;

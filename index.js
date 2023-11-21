@@ -22,3 +22,9 @@ window.addEventListener("scroll",()=>{
 
     nav.classList.toggle("sticky",window.scrollY>10)
 })
+const typed= new Typed(".auto",{
+    strings:["Im Habakuk","Im a Geometrical student ",],
+    typeSpeed:150,
+    backSpeed:150,
+    loop:true
+})
