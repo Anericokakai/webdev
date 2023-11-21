@@ -15,3 +15,10 @@ list.classList.remove("show")
 
 
 })
+
+const nav=document.querySelector("nav")
+
+window.addEventListener("scroll",()=>{
+
+    nav.classList.toggle("sticky",window.scrollY>10)
+})
