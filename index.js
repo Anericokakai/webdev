@@ -20,7 +20,7 @@ const nav=document.querySelector("nav")
 
 window.addEventListener("scroll",()=>{
 
-    nav.classList.toggle("sticky",window.scrollY>10)
+    nav.classList.toggle("sticky",window.scrollY>100)
 })
 const typed= new Typed(".auto",{
     strings:["Im Habakuk","Im a Geometrical student ",],

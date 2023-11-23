@@ -32,7 +32,7 @@ body{
 }
 .header{
     background: linear-gradient(rgba(0, 0, 0, 0.612), rgba(0, 0, 0, 0.648)),
-    url("./2863497.jpg");
+    url("./Bg.jpeg");
     min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -64,10 +64,14 @@ nav{
     justify-content: space-between;
     position: fixed;
     padding:0 1em;
-    box-shadow: var(--box-shadow);
+
     transition: all .4s ease;
 }
+.typed-cursor{
+    color: #5bc3eb;
+}
 .sticky{
+    box-shadow: var(--box-shadow);
     background-color: #5bc3eb;
 }
 .lists{
